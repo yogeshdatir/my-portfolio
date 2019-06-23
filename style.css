@@ -8,23 +8,10 @@ body {
 
 #home {
   height: 100%;
-}
-
-/* slider styles */
-
-.slider {
-  width: 100%;
-}
-
-.bx-wrapper {
-  height: 100% !important;
-  border: none !important;
-}
-
-.slider img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background: url(/img//trianglify.svg);
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
 
 /* navbar styles */
@@ -62,51 +49,28 @@ body {
 
 .znavlink {
   margin: 0 25px;
-  font-size: 2em;
+  font-size: 1.5em;
   text-decoration: none;
 }
-
-/* timeline navbar styles */
-
-/*
-.main {
-  margin-top: 25px;
-  float:left;
-  position: fixed;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  border-left: 2px solid black;
-  width: 50px;
-  height:50px;
-  margin-left: 20px;
-  text-align: center;
-}
-
-.wrapper img {
-  margin-top: 35%;
-  margin-left: -10%;
-  width: 15px;
-  height:15px;
-}
-
-.wrapper a {
-  padding: 35%;
-  text-decoration: none;
-  color:yellowgreen;
-}
-
-.active {
-  color: red !important;
-}
-*/
 
 /* about me section style */
 
+#aboutme {
+  background: url(/img//trianglify%202.svg);
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+#aboutme h1 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
 .about-me-main {
-  margin-top: 25px;
   display: flex;
   direction: row;
 }
@@ -118,6 +82,10 @@ body {
 
 .about-me-text {
   padding: 25px;
+}
+
+#aboutme a {
+  text-decoration: none;
 }
 
 /* feature section styles */
@@ -165,8 +133,9 @@ body {
 /* portfolio section styles */
 
 .portfolio {
-  margin: 15px 50px;
-  border: var(--border);
+  height: 100%;
+  margin: 0 50px;
+/*  border: var(--border);*/
 }
 
 .portfolio-header {
@@ -193,13 +162,25 @@ body {
 }
 
 .portfolio-images {
+  width: 90%;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-around;
+}
+
+.languages-each {
   width: 100%;
+  background-color: grey;
+  text-align: center;
+  color:aliceblue; 
 }
 
 /* contact section styles */
 
 .contact {
-  padding: 25px 0;
+  height: 100%;
 }
 
 .contact-header {
