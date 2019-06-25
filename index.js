@@ -1,5 +1,7 @@
 // When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
+//window.onscroll = function () {
+//  myFunction()
+//};
 
 // Get the header
 
@@ -16,3 +18,23 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+$(window).scroll(function () {
+  myFunction()
+  var scrollDistance = $(window).scrollTop();
+
+  // Show/hide menu on scroll
+  //if (scrollDistance >= 850) {
+  //		$('nav').fadeIn("fast");
+  //} else {
+  //		$('nav').fadeOut("fast");
+  //}
+
+  // Assign active class to nav links while scolling
+  $('section').each(function (i) {
+    if ($(this).position().top <= scrollDistance) {
+      $('.znavitem a.active').removeClass('active');
+      $('.znavitem a').eq(i).addClass('active');
+    }
+  });
+}).scroll();
