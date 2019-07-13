@@ -20,8 +20,8 @@ body {
 /* navbar styles */
 
 .znav {
-  line-height: 60px;
-  height: 100px;
+  line-height: 40px;
+  height: 60px;
   background-color: transparent;
   position: absolute;
   z-index: 5;
@@ -40,8 +40,10 @@ body {
   flex-wrap: row wrap;
   justify-content: flex-end;
   list-style: none;
-  margin: 0;
-  background-color: rgba(135, 115, 181, 0.95);
+}
+
+ul.znavbar {
+  margin: 10 !important;
 }
 
 .znavitem:hover {
@@ -59,6 +61,22 @@ body {
 
 .active {
   color: whitesmoke;
+}
+
+.znavbar-top {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-between;
+  margin: 0;
+  background-color: rgba(135, 115, 181, 0.95);
+}
+
+.logo {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: flex-end;
+  height: 60px;
+  margin-left: 15px;
 }
 
 /* about me section style */
@@ -91,8 +109,18 @@ body {
   padding: 25px;
 }
 
-#aboutme a {
-  text-decoration: none;
+.about-me-text button {
+  margin: 20px 20px 0 0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: skyblue;
+  border: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+} 
+
+.about-me-text button:hover {
+  background-color: blueviolet;
+  color: azure;
 }
 
 /* feature section styles */
@@ -170,6 +198,10 @@ body {
   margin: 15px 25px;
   border: var(--border);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio-tile img:hover {
+  cursor: pointer;
 }
 
 .portfolio-images {
@@ -258,10 +290,10 @@ body {
 /* footer section styles */
 
 .footer-section {
-  background-color: #F48B07;
   font-size: 10px;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   color: white;
   font-weight: 500;
+  margin-top: 50px;
 }
