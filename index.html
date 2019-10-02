@@ -1,10 +1,9 @@
 <html>
 
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +19,7 @@
   </div>
   <section id="home">
     <div class="typewriter">
-      <h1>Hi!!! I am Yogesh Datir. I am a web developer.</h1>
+      <h1>Hi!!! I am <span class='name-style'>Yogesh Datir</span>. I am a Full Stack Developer.</h1>
     </div>
   </section>
   <section id="aboutme">
@@ -80,7 +79,7 @@
     <div class=portfolio-contents>
       <div class=portfolio-tile-row>
         <div class=portfolio-tile>
-          <a target="_blank" href="https://yogeshdatir.github.io/Tic-Tac-Toe/"><img class=portfolio-images src="./img/tictactoe.png"></a>
+          <a target="_blank" href="https://yogeshdatir.github.io/Tic-Tac-Toe/"><img class=portfolio-images src="./img/tictactoe.png" title="Tic Tac Toe Game - A Vanilla JavaScript Project"></a>
           <div class='languages'>
             <div class='languages-each'>JavaScript</div>
             <div class='languages-each'>HTML5</div>
@@ -88,7 +87,7 @@
           </div>
         </div>
         <div class=portfolio-tile>
-          <a target="_blank" href="https://yogeshdatir.github.io/Project/"><img class=portfolio-images src="./img/project.png"></a>
+          <a target="_blank" href="http://yogeshdatir.github.io/To-Do-list"><img class=portfolio-images src="./img/to-do-app.PNG" title="Vanilla JavaScript To Do App"></a>
           <div class='languages'>
             <div class='languages-each'>HTML5</div>
             <div class='languages-each'>CSS3</div>
@@ -98,7 +97,7 @@
       </div>
       <div class=portfolio-tile-row>
         <div class=portfolio-tile>
-          <a target="_blank" href="https://github.com/yogeshdatir/youtube_search_api"><img class=portfolio-images src="./img/youtube%20react.png"></a>
+          <a target="_blank" href="https://github.com/yogeshdatir/youtube_search_api"><img class=portfolio-images src="./img/youtube%20react.png" title="An app which uses React.js"></a>
           <div class='languages'>
             <div class='languages-each'>React.js</div>
             <div class='languages-each'>HTML5</div>
@@ -106,7 +105,7 @@
           </div>
         </div>
         <div class=portfolio-tile>
-          <a target="_blank" href="https://yogeshdatir.github.io/FinancialBytes/"><img class=portfolio-images src="./img/financialbytes.jpg"></a>
+          <a target="_blank" href="https://yogeshdatir.github.io/FinancialBytes/"><img class=portfolio-images src="./img/financialbytes.jpg" title="A website template using Bootstrap"></a>
           <div class='languages'>
             <div class='languages-each'>HTML5</div>
             <div class='languages-each'>CSS3</div>
@@ -142,7 +141,7 @@
             <div class="contact-form-address">
               <textarea class="form-textarea" placeholder="your message..."></textarea>
               <div>
-                <button class="submit-button" type="submit"> Submit </button>
+                <button class="submit-button" type="submit" onClick="event.preventDefault();"> Submit </button>
               </div>
             </div>
           </form>

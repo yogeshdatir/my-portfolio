@@ -79,6 +79,12 @@ ul.znavbar {
   margin-left: 15px;
 }
 
+.typewriter {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;;
+}
+
 /* about me section style */
 
 #aboutme {
@@ -165,38 +171,30 @@ ul.znavbar {
   width: 25%;
 }
 
-:root {
-  --border: ;
-}
-
 /* portfolio section styles */
 
 .portfolio {
   height: 100%;
   margin: 0 50px;
-  /*  border: var(--border);*/
 }
 
 .portfolio-header {
   margin: 15px 25px;
-  border: var(--border);
   text-align: center;
 }
 
 .portfolio-contents {
   margin: 20px 25px;
-  border: var(--border);
 }
 
 .portfolio-tile-row {
   display: flex;
-  direction: row;
+  flex-direction: row;
 }
 
 .portfolio-tile {
   width: 100%;
   margin: 15px 25px;
-  border: var(--border);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -206,7 +204,7 @@ ul.znavbar {
 
 .portfolio-images {
   width: 100%;
-  height: 35%;
+  height: 35vh;
 }
 
 .languages {
