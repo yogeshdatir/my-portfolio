@@ -3,83 +3,100 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <div id="znavbar" class="znav znavbar-top">
-      <div class="logo"><img src="./img/logo (4).png"></div>    
-    <ul class="znavbar">
-      <li class="znavitem"><a class="znavlink" href="#home">Home</a></li>
-      <li class="znavitem"><a class="znavlink" href="#aboutme">About Me</a></li>
-      <li class="znavitem"><a class="znavlink" href="#about-my-work">About My Work</a></li>
-      <li class="znavitem"><a class="znavlink" href="#portfolio">My Work</a></li>
-      <li class="znavitem"><a class="znavlink" href="#contact">Contact</a></li>
-    </ul>
-  </div>
-  <section id="home">
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1>YogeshD</h1>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#about-my-work">About My Work</a></li>
+          <li><a href="#portfolio">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="home" class="container">
     <div class="typewriter">
-      <h1>Hi!!! I am <span class='name-style'>Yogesh Datir</span>. I am a Full Stack Developer.</h1>
-    </div>
-  </section>
-  <section id="aboutme">
-    <h1>about me</h1>
-    <div class="about-me-main">
+      <!-- <img class="photo" src="./img/yogesh.jpg"> -->
       <div>
-        <img class="about-me-image" src="https://i.pinimg.com/originals/50/b8/2b/50b82b666661dc020ce5d7a39b391d7f.jpg">
-      </div>
-      <div class="about-me-text">
-        <h4>Just a simple dude who wants to create awesome stuff...</h4>
-        <p>
-          Hi!!! I am a Web/Product Developer from Pune, India. </p>
-        <p> I enjoy taking complex problems and turning them into simple and attractive websites.</p>
-        <p>I like modularity and breaking down of a problem into smaller ones.</p>
-        <p> I also love the logic and structure of coding and always strive to write elegant and efficient code, whether it be HTML/CSS, Javascript or Java.</p>
-        <p> I also build really awesome and responsive websites.
-        </p>
-        <a href="https://www.linkedin.com/in/yogesh-datir-3103a9100/" target="_blank"><button>LinkedIn</button></a>
-        <a href="assets/new_Resume-converted.pdf" target="_blank"><button>Resume</button></a>
-      </div>
-
-    </div>
-  </section>
-  <section id="about-my-work">
-
-    <div class="feature-row">
-
-      <div class="feature">
-        <img class="feature-img" src="./img/simplicity.jpg">
-        <h4>Simplicity</h4>
-        <p>Avoiding Complexity<br>reduces bugs.</p>
-      </div>
-      <div class="feature">
-        <img class="feature-img" src="./img/passion.jpg">
-        <h4>Passion</h4>
-        <p>Passion gives you motivation to keep trying,<br>even if you fail time after time.</p>
-      </div>
-      <div class="feature">
-        <img class="feature-img" src="./img/flexibility.jpg">
-        <h4>Flexibility</h4>
-        <p>Stay committed to your decisions, <br>but stay flexible in your approach.</p>
-      </div>
-      <div class="feature">
-        <img class="feature-img" src="./img/problem_solving.jpg">
-        <h4>Problem Solving</h4>
-        <p>For me, creativity includes problem solving.<br>That's the broad definition of it.</p>
-      </div>
-      <div class="feature-header">
-        <h2>About my work ...</h2>
+        <h1>Hi!!! I am <span class='name-style'>Yogesh Datir</span>.</h1>
+        <p>I am a Full Stack, Product Developer.</p>
       </div>
     </div>
   </section>
-  <section id="portfolio" class=portfolio>
-    <div class=portfolio-header>
-      <h1>My Work</h1>
+  <section id="aboutme" class="container">
+    <div class="aboutme-container">
+      <h1>about me</h1>
+      <div class="about-me-main">
+        <div>
+          <img class="about-me-image"
+            src="https://i.pinimg.com/originals/50/b8/2b/50b82b666661dc020ce5d7a39b391d7f.jpg">
+        </div>
+        <div class="about-me-text">
+          <p>
+            Hi!!! I am a Web/Product Developer from Pune, India. </p>
+          <p> I enjoy taking complex problems and turning them into simple and attractive websites.</p>
+          <p>I like modularity and breaking down of a problem into smaller ones.</p>
+          <p> I also love the logic and structure of coding and always strive to write elegant and efficient code,
+            whether
+            it be HTML/CSS, Javascript or Java.</p>
+          <p> I also build really awesome and responsive websites.
+          </p>
+          <a href="https://www.linkedin.com/in/yogeshdatir" target="_blank"><button>LinkedIn</button></a>
+          <a href="assets/new_Resume-converted.pdf" target="_blank"><button>Resume</button></a>
+        </div>
+      </div>
     </div>
-    <div class=portfolio-contents>
+  </section>
+
+  <section id="about-my-work" class="container">
+
+    <div class="aboutmywork-container">
+      <h1 class=portfolio-header>About my work ...</h1>
+      <div class="feature-row">
+
+        <div class="feature">
+          <img class="feature-img" src="./img/simplicity.jpg">
+          <h4>Simplicity</h4>
+          <p>Avoiding Complexity<br>reduces bugs.</p>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/passion.jpg">
+          <h4>Passion</h4>
+          <p>Passion gives you motivation to keep trying,<br>even if you fail time after time.</p>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/flexibility.jpg">
+          <h4>Flexibility</h4>
+          <p>Stay committed to your decisions, <br>but stay flexible in your approach.</p>
+        </div>
+        <div class="feature">
+          <img class="feature-img" src="./img/problem_solving.jpg">
+          <h4>Problem Solving</h4>
+          <p>For me, creativity includes problem solving.<br>That's the broad definition of it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="container portfolio">
+    <div class="portfolio-container">
+      <div class=portfolio-header>
+        <h1>My Work</h1>
+      </div>
       <div class=portfolio-tile-row>
         <div class=portfolio-tile>
-          <a target="_blank" href="https://yogeshdatir.github.io/Tic-Tac-Toe/"><img class=portfolio-images src="./img/tictactoe.png" title="Tic Tac Toe Game - A Vanilla JavaScript Project"></a>
+          <a target="_blank" href="https://yogeshdatir.github.io/Tic-Tac-Toe/"><img class=portfolio-images
+              src="./img/tictactoe.png" title="Tic Tac Toe Game - A Vanilla JavaScript Project"></a>
           <div class='languages'>
             <div class='languages-each'>JavaScript</div>
             <div class='languages-each'>HTML5</div>
@@ -87,7 +104,8 @@
           </div>
         </div>
         <div class=portfolio-tile>
-          <a target="_blank" href="http://yogeshdatir.github.io/To-Do-list"><img class=portfolio-images src="./img/to-do-app.PNG" title="Vanilla JavaScript To Do App"></a>
+          <a target="_blank" href="https://yogeshdatir.github.io/To-Do-list/"><img class=portfolio-images
+              src="./img/to-do-app.PNG" title="Vanilla JavaScript To Do App"></a>
           <div class='languages'>
             <div class='languages-each'>HTML5</div>
             <div class='languages-each'>CSS3</div>
@@ -97,7 +115,8 @@
       </div>
       <div class=portfolio-tile-row>
         <div class=portfolio-tile>
-          <a target="_blank" href="https://github.com/yogeshdatir/youtube_search_api"><img class=portfolio-images src="./img/youtube%20react.png" title="An app which uses React.js"></a>
+          <a target="_blank" href="https://github.com/yogeshdatir/youtube_search_api"><img class=portfolio-images
+              src="./img/youtube%20react.png" title="An app which uses React.js"></a>
           <div class='languages'>
             <div class='languages-each'>React.js</div>
             <div class='languages-each'>HTML5</div>
@@ -105,7 +124,8 @@
           </div>
         </div>
         <div class=portfolio-tile>
-          <a target="_blank" href="https://yogeshdatir.github.io/FinancialBytes/"><img class=portfolio-images src="./img/financialbytes.jpg" title="A website template using Bootstrap"></a>
+          <a target="_blank" href="https://github.com/yogeshdatir/django_fin_app"><img class=portfolio-images
+              src="./img/financialbytes.jpg" title="A website template using Bootstrap"></a>
           <div class='languages'>
             <div class='languages-each'>HTML5</div>
             <div class='languages-each'>CSS3</div>
@@ -115,46 +135,53 @@
       </div>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <div class="contact-header">
-      <h2>WANT TO CHAT ABOUT SOMETHING?</h2>
-      <p>SAY HELLO</p>
-    </div>
-    <div class="contact-row">
-      <div class="contact-details-column">
-        <div class="contact-details">
-          <h3>Phone</h3>
-          <p>9923704783</p>
-        </div>
-        <div class="contact-details">
-          <h3>Email</h3>
-          <p>yogdat@gmail.com</p>
-        </div>
+  <section class="contact container" id="contact">
+    <div class="contact-container">
+      <div class="contact-header">
+        <h2>WANT TO CHAT ABOUT SOMETHING?</h2>
+        <p>SAY HELLO</p>
       </div>
-      <div class="contact-details-column">
-        <div class="contact-form">
-          <form>
-            <div class="contact-form-name">
-              <input class="form-item" type="text" placeholder="First name">
-              <input class="form-item" type="text" placeholder="Last name">
-            </div>
-            <div class="contact-form-address">
-              <textarea class="form-textarea" placeholder="your message..."></textarea>
-              <div>
-                <button class="submit-button" type="submit" onClick="event.preventDefault();"> Submit </button>
+      <div class="contact-row">
+        <div class="contact-details-column">
+          <p class="contact-details">
+            <i class="fa fa-envelope" aria-hidden="true"></i> <span>yogdat@gmail.com</span>
+          </p>
+          <p class="contact-details">
+            <a href="https://www.linkedin.com/in/yogeshdatir" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> <span> LinkedIn</span></a>
+          </p>
+          <p class="contact-details">
+            <a href="https://medium.com/@yogdat" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i> <span> Medium.com Profile</span></a>
+          </p>
+          <p class="contact-details">
+            <a href="https://twitter.com/prophet_yashd" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</span></a>
+          </p>
+        </div>
+        <div class="contact-details-column">
+          <div class="contact-form">
+            <form>
+              <div class="contact-form-name">
+                <input class="form-item" type="text" placeholder="First name">
+                <input class="form-item" type="text" placeholder="Last name">
               </div>
-            </div>
-          </form>
+              <div class="contact-form-address">
+                <textarea class="form-textarea" placeholder="your message..."></textarea>
+                <div>
+                  <button class="submit-button" type="submit" onClick="event.preventDefault();"> Submit </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-section">
-      COPYRIGHTS @ YOGESH DATIR. ALL RIGHTS RESERVED.
+      <div class="footer-section">
+        Copyright &copy <span id="current-year"></span> Yogesh Datir
+      </div>
     </div>
   </section>
 
   <script src="index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 </body>
 
 </html>

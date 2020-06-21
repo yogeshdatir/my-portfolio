@@ -1,17 +1,17 @@
-// When the user scrolls the page, execute myFunction 
-//window.onscroll = function () {
-//  myFunction()
-//};
+(() => {
+  const span = document.querySelector('#current-year')
+  span.innerText = new Date().getFullYear()
+})()
 
 // Get the header
 
-var navbar = document.getElementById("znavbar")
+var navbar = document.querySelector("nav")
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetHeight;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function makeNavbarSticky() {
   if (window.pageYOffset > sticky) {
     navbar.classList.add("sticky");
   } else {
@@ -19,22 +19,15 @@ function myFunction() {
   }
 }
 
-$(window).scroll(function () {
-  myFunction()
-  var scrollDistance = $(window).scrollTop();
-
-  // Show/hide menu on scroll
-  //if (scrollDistance >= 850) {
-  //		$('nav').fadeIn("fast");
-  //} else {
-  //		$('nav').fadeOut("fast");
-  //}
+window.addEventListener('scroll', function () {
+  makeNavbarSticky()
+  let scrollDistance = window.pageYOffset;
 
   // Assign active class to nav links while scolling
   $('section').each(function (i) {
-    if ($(this).position().top <= scrollDistance) {
-      $('.znavitem a.active').removeClass('active');
-      $('.znavitem a').eq(i).addClass('active');
+    if ($(this).position().top - 100 <= scrollDistance) {
+      $('nav ul li.active').removeClass('active');
+      $('nav ul li').eq(i).addClass('active');
     }
   });
-}).scroll();
+});

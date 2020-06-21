@@ -1,98 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Kalam|Rubik:300,400i&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Rubik';
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 /* home section styles */
 
 #home {
-  height: 100%;
-  background: url(./img//trianglify.svg);
+  height: 100vh;
+  background: url(./img//Bg1.png);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.typewriter {
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* navbar styles */
 
-.znav {
-  line-height: 40px;
-  height: 60px;
-  background-color: transparent;
-  position: absolute;
-  z-index: 5;
+.container {
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  line-height: 40px;
+  position: absolute;
+  height: 10vh;
+  width: 80%;
 }
 
 .sticky {
   position: fixed;
-  top: 0;
-  z-index: 5;
-  width: 100%;
 }
 
-.znavbar {
+nav ul {
   display: flex;
-  flex-wrap: row wrap;
-  justify-content: flex-end;
   list-style: none;
-}
-
-ul.znavbar {
   margin: 10 !important;
 }
 
-.znavitem:hover {
-  cursor: pointer;
-  color: blue;
-  height: 10%;
+nav ul li {
+  transition: all 0.2s ease-in;
 }
 
-.znavlink {
+nav ul li:hover {
+  cursor: pointer;
+  background-color: rgba(102, 51, 153, 0.671);
+}
+
+nav ul li a {
   margin: 0 15px;
-  font-size: 1.5em;
+  font-size: 1em;
   text-decoration: none;
-  color: coral;
+  color: darkred;
+  transition: all 0.2s ease-in;
 }
 
 .active {
+  background-color: rebeccapurple !important;
+}
+
+.active a {
   color: whitesmoke;
 }
 
-.znavbar-top {
-  display: flex;
-  flex-wrap: row wrap;
-  justify-content: space-between;
-  margin: 0;
-  background-color: rgba(135, 115, 181, 0.95);
-}
-
 .logo {
+  font-family: 'Shrikhand', cursive;
   display: flex;
-  flex-wrap: row wrap;
-  justify-content: flex-end;
-  height: 60px;
-  margin-left: 15px;
+  align-items: center;
 }
 
-.typewriter {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;;
-}
+/* .photo {
+  height: 300;
+  width: 200px;
+  flex: 3;
+} */
 
 /* about me section style */
 
 #aboutme {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: rebeccapurple;
+}
+
+.aboutme-container {
+  width: 80%;
+  background: linear-gradient(0deg, rgba(176,238,221,1) 0%, rgba(242,240,85,1) 100%);
 }
 
 #aboutme h1 {
@@ -132,24 +146,24 @@ ul.znavbar {
 /* feature section styles */
 
 #about-my-work {
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8));
   color: azure;
 }
 
-.feature-header {
-  padding: 50px;
-  background-color: brown;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+#about-my-work h1 {
+  color: black;
+}
+
+.aboutmywork-container {
+  margin-top: 10vh;
+  background: linear-gradient(0deg, rgba(120,67,245,1) 0%, rgba(173,45,253,1) 100%);
+  width: 80%;
 }
 
 .feature-row {
   display: flex;
   direction: row;
   justify-content: space-around;
-  padding: 15px 25px;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -167,24 +181,22 @@ ul.znavbar {
 }
 
 .feature {
-  padding: 15px 15px;
   width: 25%;
 }
 
 /* portfolio section styles */
 
 .portfolio {
-  height: 100%;
-  margin: 0 50px;
+  height: 100vh;
+}
+
+.portfolio-container {
+  margin-top: 10vh;
+  width: 80%;
 }
 
 .portfolio-header {
-  margin: 15px 25px;
   text-align: center;
-}
-
-.portfolio-contents {
-  margin: 20px 25px;
 }
 
 .portfolio-tile-row {
@@ -193,13 +205,16 @@ ul.znavbar {
 }
 
 .portfolio-tile {
-  width: 100%;
-  margin: 15px 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio-tile img {
+  transition: all 0.3s ease;
 }
 
 .portfolio-tile img:hover {
   cursor: pointer;
+  transform: scale(1.1, 1.1);
 }
 
 .portfolio-images {
@@ -222,14 +237,18 @@ ul.znavbar {
 /* contact section styles */
 
 .contact {
-  height: 100%;
-  background-image: linear-gradient(-90deg, rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.7));
+  height: 100vh;
+}
+
+.contact-container {
+  margin-top: 10vh;
+  width: 80%;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(45,182,253,1) 94%);
 }
 
 .contact-header {
   padding: 50px;
-  padding-top: 70px;
-  background-color: brown;
+  /* background-color: brown; */
   color: azure;
 }
 
@@ -242,12 +261,15 @@ ul.znavbar {
   display: flex;
   direction: row;
   justify-content: space-around;
-  padding-top: 7em;
 }
 
 .contact-details-column {
   display: flex;
   flex-direction: column;
+}
+
+.contact-details a {
+  text-decoration: none;
 }
 
 .contact-form {
@@ -282,6 +304,13 @@ ul.znavbar {
   border-radius: 5px;
   border: solid 0.5px darkblue;
   background-color: lavender;
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rebeccapurple;
+  color: aliceblue;
 }
 
 
@@ -291,7 +320,7 @@ ul.znavbar {
   font-size: 10px;
   text-align: center;
   line-height: 40px;
-  color: white;
+  color: rebeccapurple;
   font-weight: 500;
   margin-top: 50px;
 }
