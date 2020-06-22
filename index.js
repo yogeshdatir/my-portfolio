@@ -26,8 +26,8 @@ window.addEventListener('scroll', function () {
   // Assign active class to nav links while scolling
   $('section').each(function (i) {
     if ($(this).position().top - 100 <= scrollDistance) {
-      $('nav ul li.active').removeClass('active');
-      $('nav ul li').eq(i).addClass('active');
+      $('nav ul a.active').removeClass('active');
+      $('nav ul a').eq(i).addClass('active');
     }
   });
 });

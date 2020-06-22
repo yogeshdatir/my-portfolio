@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
+
+:root {
+  --main-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(45,182,253,1) 94%);
+  --main-text-color: rebeccapurple;
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  color: var(--main-text-color);
 }
 
 /* home section styles */
@@ -23,10 +30,22 @@ body {
 .typewriter {
   width: 80%;
   font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.8em;
+}
+
+.name-header {
+  font-size: 1.8em;
+  border-left: 5px groove red;
+  border-bottom: 5px groove red;
+  padding: 5px 15px 0 15px;
+  margin-bottom: 10%;
+}
+
+.typewriter p {
+  line-height: 0.7em;
 }
 
 /* navbar styles */
@@ -57,16 +76,17 @@ nav ul {
   margin: 10 !important;
 }
 
-nav ul li {
+nav ul a {
   transition: all 0.2s ease-in;
+  text-decoration: none;
 }
 
-nav ul li:hover {
+nav ul a:hover {
   cursor: pointer;
   background-color: rgba(102, 51, 153, 0.671);
 }
 
-nav ul li a {
+nav ul li {
   margin: 0 15px;
   font-size: 1em;
   text-decoration: none;
@@ -78,7 +98,7 @@ nav ul li a {
   background-color: rebeccapurple !important;
 }
 
-.active a {
+.active li {
   color: whitesmoke;
 }
 
@@ -102,17 +122,14 @@ nav ul li a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rebeccapurple;
 }
 
 .aboutme-container {
   width: 80%;
-  background: linear-gradient(0deg, rgba(176,238,221,1) 0%, rgba(242,240,85,1) 100%);
+  background: var(--main-background);
 }
 
-#aboutme h1 {
-  padding: 0;
-  margin: 0;
+.aboutme-header {
   text-align: center;
 }
 
@@ -146,17 +163,9 @@ nav ul li a {
 
 /* feature section styles */
 
-#about-my-work {
-  color: azure;
-}
-
-#about-my-work h1 {
-  color: black;
-}
-
 .aboutmywork-container {
-  margin-top: 10vh;
-  background: linear-gradient(0deg, rgba(120,67,245,1) 0%, rgba(173,45,253,1) 100%);
+  margin-top: 10%;
+  background: var(--main-background);
   width: 80%;
 }
 
@@ -244,13 +253,12 @@ nav ul li a {
 .contact-container {
   margin-top: 10vh;
   width: 80%;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(45,182,253,1) 94%);
+  background: var(--main-background);
 }
 
 .contact-header {
   padding: 50px;
   /* background-color: brown; */
-  color: azure;
 }
 
 .contact-header h2,
