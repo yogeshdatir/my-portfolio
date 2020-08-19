@@ -106,13 +106,57 @@ nav ul li {
   font-family: 'Shrikhand', cursive;
   display: flex;
   align-items: center;
+}  
+
+#hamburger {
+  display: none;
 }
 
-/* .photo {
-  height: 300;
-  width: 200px;
-  flex: 3;
-} */
+@media screen and (max-width: 1024px) {
+  nav, nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: all 0.5s linear;
+  }
+  nav {
+    background-color: rgba(102, 51, 153, 1);
+    color: white;
+  }
+  nav ul {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--main-text-color);
+    transform: translateX(100%);
+  }
+  #hamburger {
+    display: block;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    transition: all 0.5s linear;
+    font-size: 2em;
+  }
+  #home {
+    height: auto;
+    margin-top: 10vh;
+  }
+  .typewriter, .typewriter p {
+    line-height: auto;
+  }
+
+  #aboutme {
+    height: auto;
+    margin-top: 5vh;
+  }
+
+  .about-me-image {
+    display: none;
+  }
+}
 
 /* about me section style */
 

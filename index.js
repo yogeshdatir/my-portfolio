@@ -31,3 +31,17 @@ window.addEventListener('scroll', function () {
     }
   });
 });
+
+
+var toggle = true
+document.querySelector('#hamburger').addEventListener('click', () => {
+  var transformProp = 'translateX(0%)'
+  let hamburgerToggleClass = 'fa fa-times'
+  if(!toggle) {
+  hamburgerToggleClass = 'fa fa-bars'
+  transformProp = 'translateX(100%)'
+  }
+  document.querySelector('nav ul').style.transform = transformProp
+  document.querySelector('#hamburger').classList = hamburgerToggleClass
+  toggle = !toggle
+})
